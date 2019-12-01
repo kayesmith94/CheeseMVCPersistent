@@ -1,0 +1,14 @@
+﻿
+@{ViewData["Title"] = "Index";}
+@model List<CheeseMVC.Models.CheeseCategory>
+    
+
+
+  @* TODO Use context.Categories.ToList() returns a list of all CheeseCategory objects managed by CheeseDbContext.
+    Use this snippet to retrieve the list of categories, and then pass the list into the view.Your view should display an unordered list
+    (that is, a <ul>) of category names. The list will look a bit plain for now, but we will make it more interesting later on.*@
+
+<ul>
+    @foreach (CheeseCategory obj in Model)
+        <li>@obj.Name??</li>
+</ul>
